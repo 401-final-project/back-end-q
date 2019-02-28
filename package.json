@@ -1,0 +1,30 @@
+{
+  "name": "40-q-server",
+  "version": "1.0.0",
+  "description": "q server for database dashboard",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "lint": "eslint **/*.js",
+    "test": "jest --verbose --coverage",
+    "test-watch": "jest --watchAll --verbose --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asdFletcher/40-q-server.git"
+  },
+  "author": "FL and HC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asdFletcher/40-q-server/issues"
+  },
+  "homepage": "https://github.com/asdFletcher/40-q-server#readme",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "jest": "^24.1.0",
+    "jsdoc": "^3.5.5",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0"
+  }
+}
