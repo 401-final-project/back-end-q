@@ -39,16 +39,12 @@ class Q {
   }
 }
 
-const db = new Q('database');
+const db = new Q('users');
 
 // database rooms
 db.monitorEvent('create');
 db.monitorEvent('update');
 db.monitorEvent('destroy');
-
-setInterval(() => {
-  io.emit('ping', { data: (new Date())/1});
-}, 1000);
 
 const port = process.env.PORT;
 http.listen(port, function(){
